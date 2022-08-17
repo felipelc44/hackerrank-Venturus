@@ -1,0 +1,14 @@
+{
+  "name": "test-cases",
+  "version": "1.0.0",
+  "description": "venturus-test-automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Felipe Carvalho",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.4.0"
+  }
+}
