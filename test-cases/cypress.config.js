@@ -10,6 +10,7 @@ module.exports = defineConfig({
 });
 
 module.exports = defineConfig({
+  projectId: "ju3pp2",
   viewportWidth: 1440,
   viewportHeight: 900,
   e2e: {
