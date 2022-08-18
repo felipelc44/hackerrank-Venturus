@@ -1,9 +1,6 @@
 # Dependency directories
 node_modules
-<<<<<<< HEAD
 client
 server
-=======
 test-cases/cypress/screenshots
 test-cases/cypress/videos
->>>>>>> ae71b65d57780b34619a68214f74a1366786e240
