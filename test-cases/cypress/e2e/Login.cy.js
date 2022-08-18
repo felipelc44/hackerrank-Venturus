@@ -3,7 +3,7 @@ import start2 from '../pages/descriptionPO'
 
 describe('Login-Tests',() => {
 
-    before(function() {
+    afterEach(function() {
         //Function to logout the user to restart the tests
         start2.go()
         cy.get('.ant-avatar-string').click()
