@@ -3,13 +3,7 @@ import start2 from '../pages/descriptionPO'
 
 describe('Login-Tests',() => {
 
-    afterEach(function() {
-        //Function to logout the user to restart the tests
-        start2.go()
-        cy.get('.ant-avatar-string').click()
-        cy.get('.ant-dropdown-menu > :nth-child(4)').click()
 
-    })
 
     it('Username_and_Password should be inputed ',() => {
         //Variables
@@ -75,6 +69,12 @@ describe('Login-Tests',() => {
 
     })
 
+    afterEach(function() {
+        //Function to logout the user to restart the tests
+        start2.go()
+        cy.get('.ant-avatar-string').click()
+        cy.get('.ant-dropdown-menu > :nth-child(4)').click()
 
 
+})
 })
