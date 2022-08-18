@@ -2,5 +2,3 @@
 node_modules
 client
 server
-test-cases/cypress/screenshots
-test-cases/cypress/videos
