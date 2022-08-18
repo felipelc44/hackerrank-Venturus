@@ -3,33 +3,7 @@ import start2 from '../pages/descriptionPO'
 
 describe('Login-Tests',() => {
 
-    /*before(function() {
-        //Function to logout the user to restart the tests
-        start2.go()
-        cy.get('.ant-avatar-string').click()
-        cy.get('.ant-dropdown-menu > :nth-child(4)').click()
-    })*/
-
-    it('Sucess_login',() => {
-        //Variables
-        var info = { usr:'testuser', password:'sr123'}
-        const Message4 = 'Hi, Test User'
-        //var start = new LoginPage()
-
-        start.go()
-        start.fillForm(info)
-        start.submitLogin()
-
-        //var start2 = new DescriptionPage()
-        start2.go()
-        start2.validationFour(Message4)
-        //
-        start2.go()
-        cy.get('.ant-avatar-string').click()
-        cy.get('.ant-dropdown-menu > :nth-child(4)').click()
-    })
-
-    it('Username_and_Password should be inputed ',() => {
+     it('Username_and_Password should be inputed ',() => {
         //Variables
         //var start = new LoginPage()
         const Message1 = 'Please input your username.'
@@ -56,7 +30,7 @@ describe('Login-Tests',() => {
             start.validationThree(Message3)
             })
 
-            
+
     it('Sucess_logout',() => {
         //Variables
         var info = { usr:'testuser', password:'sr123'}
@@ -77,6 +51,19 @@ describe('Login-Tests',() => {
         start.validationLogoff(Message5)
     })
 
+    it('Sucess_login',() => {
+        //Variables
+        var info = { usr:'testuser', password:'sr123'}
+        const Message4 = 'Hi, Test User'
+        //var start = new LoginPage()
+        start.go()
+        start.fillForm(info)
+        start.submitLogin()
+        //var start2 = new DescriptionPage()
+        start2.go()
+        start2.validationFour(Message4)
 
-    
+    })
+
+
 })
