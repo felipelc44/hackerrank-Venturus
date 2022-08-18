@@ -3,7 +3,7 @@ import start2 from '../pages/descriptionPO'
 import start3 from '../pages/Page1PO'
 
 describe('Page1-Tests',() => {
-
+/*
     beforeEach(function() {
         //Function to logout of the system if the user is logged
         start2.go()
@@ -11,7 +11,7 @@ describe('Page1-Tests',() => {
         cy.get('.ant-dropdown-menu > :nth-child(4)').click()
         //start.validationLogoff(Message5)
         })
-
+*/
     it('Order by Name Ascending',() =>  {
         //Variables
         var info = { usr:'testuser', password:'sr123'}
@@ -52,5 +52,6 @@ describe('Page1-Tests',() => {
         start3.submitNextPage()
         start3.submitPreviousPage()
     })
+
 
 })
