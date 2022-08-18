@@ -16,7 +16,7 @@ jobs:
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v2
         with:
-          install-command: yarn start:ci & npx wait-on http://localhost:3000
+          install-command: yarn install & npx wait-on
                            
           wait-on-timeout: 60
           browser: chrome
